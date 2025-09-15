@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$PROJECT_DIR$/../Algorithms_Java/src/main/java/Leetcode_Daily_Record/leetcode/editor/en/[32]Longest Valid Parentheses.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../Algorithms_Java/src/main/java/Leetcode_Daily_Record/leetcode/editor/en/doc/content/[32]Longest Valid Parentheses.md" />
+              <option name="frontendQuestionId" value="leetcode.com32" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../Algorithms_Java/src/main/java/Leetcode_Daily_Record/leetcode/editor/en/[32]Longest Valid Parentheses.java" />
+              <option name="titleSlug" value="longest-valid-parentheses" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/Leetcode/leetcode/editor/en/[37]Sudoku Solver.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/Leetcode/leetcode/editor/en/doc/content/[37]Sudoku Solver.md" />
+              <option name="frontendQuestionId" value="leetcode.com37" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/Leetcode/leetcode/editor/en/[37]Sudoku Solver.java" />
+              <option name="titleSlug" value="sudoku-solver" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/Leetcode/leetcode/editor/en/[41]First Missing Positive.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/Leetcode/leetcode/editor/en/doc/content/[41]First Missing Positive.md" />
+              <option name="frontendQuestionId" value="leetcode.com41" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/Leetcode/leetcode/editor/en/[41]First Missing Positive.java" />
+              <option name="titleSlug" value="first-missing-positive" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
