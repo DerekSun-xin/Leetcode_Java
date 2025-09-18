@@ -38,48 +38,37 @@ import lombok.extern.slf4j.Slf4j;
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int trap(int[] height) {
-        // Method 1: Dynamic Programming
-        int n = height.length;
-
-        // 1. Create int[] maxLeft O(n)
-        int[] maxLeft = new int[n];
-        int leftMaxHeight = height[0];
-
-        for(int i = 1; i < n; i++){
-            maxLeft[i] = leftMaxHeight;
-            if (height[i] > leftMaxHeight){
-                leftMaxHeight = height[i];
-            }
-        }
-
-        // 2. Create int[] maxRight O(n)
-        int[] maxRight = new int[n];
-        int rightMaxHeight = height[n-1];
-        for (int j = n-2; j >= 0; j--){
-            maxRight[j] = rightMaxHeight;
-            if (height[j] > rightMaxHeight){
-                rightMaxHeight = height[j];
-            }
-        }
-
-        // 3. Create a dp to store the water hold at each position i  O(n)
-        int[] dp = new int[n];
+        // Method 2: Two pointers
+        int leftMax = height[0];
+        int rightMax = height[height.length-1];
+        int left = 1;
+        int right = height.length - 2;
         int sum = 0;
-        for (int i = 0; i < n; i++){
-            int waterHold = Math.min(maxLeft[i], maxRight[i]) - height[i];
-            if (waterHold > 0){
-                dp[i] = waterHold;
-                sum += dp[i];
+
+        while(left <= right){
+            // if leftMax <= rightMax
+            if (leftMax <= rightMax){
+                int waterHold = leftMax - height[left];
+                if (waterHold > 0){
+                    sum+=waterHold;
+                }
+                if (height[left] > leftMax){
+                    leftMax = height[left];
+                }
+                left++;
+            }else{
+                int waterHold = rightMax - height[right];
+                if (waterHold > 0){
+                    sum += waterHold;
+                }
+                if (height[right] > rightMax){
+                    rightMax = height[right];
+                }
+                right--;
             }
         }
-
         return sum;
     }
-
-//    public static void main (String[] args){
-//        int[] height = {0,1,0,2,1,0,1,3,2,1,2,1};
-//        Solution sol = new Solution();
-//        System.out.println(sol.trap(height));
-//    }
+    
 }
 //leetcode submit region end(Prohibit modification and deletion)

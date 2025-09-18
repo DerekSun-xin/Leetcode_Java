@@ -1,4 +1,4 @@
-package Leetcode.leetcode.editor.en;//Write a program to solve a Sudoku puzzle by filling the empty cells.
+//Write a program to solve a Sudoku puzzle by filling the empty cells.
 //
 // A sudoku solution must satisfy all of the following rules: 
 //
@@ -48,6 +48,10 @@ package Leetcode.leetcode.editor.en;//Write a program to solve a Sudoku puzzle b
 class Solution37 {
     public void solveSudoku(char[][] board) {
         
+    }
+
+    public static void main(String[] args){
+        System.out.println("Hello World!");
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
