@@ -36,7 +36,7 @@ import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution42 {
     public int trap(int[] height) {
         // Method 2: Two pointers
         int leftMax = height[0];
