@@ -50,57 +50,47 @@
 
 //leetcode submit region begin(Prohibit modification and deletion)
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.List;
 
 class MinStack {
-    List<Node> stack;
-    int length;
+    Deque<Node> stack;
 
     public MinStack() {
-        stack = new ArrayList<Node>();
-        length = 0;
+        stack = new ArrayDeque<>();
     }
     
     public void push(int val) {
-        Node newNode = new Node(val);
-        if (length == 0){
-            newNode.minVal=val;
+        int curMin;
+        if (stack.isEmpty() || val < this.getMin()){
+            curMin=val;
         }else{
-            Node lastNode = stack.get(length-1);
-            if (val < lastNode.minVal){
-                newNode.minVal = val;
-            }else{
-                newNode.minVal = lastNode.minVal;
-            }
+            curMin = this.getMin();
         }
-        stack.add(newNode);
-        length++;
+        stack.push(new Node(val, curMin));
     }
     
     public void pop() {
-        if (length <= 0){
-            return;
-        }
-        stack.remove(length-1);
-        length--;
+        stack.pop();
     }
     
     public int top() {
-        return stack.get(length-1).val;
+        return stack.peek().val;
     }
     
     public int getMin() {
-        return stack.get(length-1).minVal;
+        return stack.peek().minVal;
     }
 
-    class Node{
+    private class Node{
         int val;
         int minVal;
 
-        Node(int val){
+        Node(int val, int minVal){
             this.val = val;
-            minVal = 0;
+            this.minVal = minVal;
         }
     }
 }
