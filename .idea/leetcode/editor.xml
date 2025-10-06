@@ -157,6 +157,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/Leetcode/leetcode/editor/en/[704]Binary Search.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/Leetcode/leetcode/editor/en/doc/content/[704]Binary Search.md" />
+              <option name="frontendQuestionId" value="leetcode.com704" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/Leetcode/leetcode/editor/en/[704]Binary Search.java" />
+              <option name="titleSlug" value="binary-search" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/Leetcode/leetcode/editor/en/[739]Daily Temperatures.java">
           <value>
             <LeetcodeEditor>
@@ -165,6 +176,28 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/Leetcode/leetcode/editor/en/[739]Daily Temperatures.java" />
               <option name="titleSlug" value="daily-temperatures" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/Leetcode/leetcode/editor/en/[74]Search a 2D Matrix.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/Leetcode/leetcode/editor/en/doc/content/[74]Search a 2D Matrix.md" />
+              <option name="frontendQuestionId" value="leetcode.com74" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/Leetcode/leetcode/editor/en/[74]Search a 2D Matrix.java" />
+              <option name="titleSlug" value="search-a-2d-matrix" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/Leetcode/leetcode/editor/en/[84]Largest Rectangle in Histogram.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/Leetcode/leetcode/editor/en/doc/content/[84]Largest Rectangle in Histogram.md" />
+              <option name="frontendQuestionId" value="leetcode.com84" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/Leetcode/leetcode/editor/en/[84]Largest Rectangle in Histogram.java" />
+              <option name="titleSlug" value="largest-rectangle-in-histogram" />
             </LeetcodeEditor>
           </value>
         </entry>
