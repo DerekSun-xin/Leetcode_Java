@@ -35,7 +35,7 @@
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution704 {
     public int search(int[] nums, int target) {
         int left = 0, right = nums.length-1;
         while(left <= right){

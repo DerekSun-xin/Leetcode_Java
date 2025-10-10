@@ -48,7 +48,7 @@ import java.util.Deque;
 import java.util.List;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution239 {
     public int[] maxSlidingWindow(int[] nums, int k) {
         if(nums.length == k){
             int[] res = new int[1];

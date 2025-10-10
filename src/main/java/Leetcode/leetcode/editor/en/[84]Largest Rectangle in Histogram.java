@@ -34,41 +34,9 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution84 {
     public int largestRectangleArea(int[] heights) {
-        Deque<Integer> dq = new ArrayDeque<>(); // Maintain a dq of non-decreasing order
-        dq.push(0);
-        int maxArea = heights[0];
-        for(int i = 1; i <= heights.length; i++){
-            int curHeight;
-            // Add a prolonged height 0 at the end to make sure the stack will be processed empty no element is left
-            if (i == heights.length){
-                curHeight = 0;
-            }else{
-                curHeight  = heights[i];
-            }
-
-            if (curHeight >= heights[dq.peek()]){
-                dq.push(i);
-            }else{
-                while(!dq.isEmpty() && curHeight < heights[dq.peek()]) {
-                    // Find the boundary for the top element of dq
-                    int width;
-                    Integer barIdx = dq.pop();
-                    if (!dq.isEmpty()){
-                        width = i - dq.peek() - 1;
-                    }else{
-                        width = i;
-                    }
-                    if (heights[barIdx] * width > maxArea) {
-                        maxArea = heights[barIdx] * width;
-                    }
-                }
-                dq.push(i);
-            }
-        }
-
-        return maxArea;
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

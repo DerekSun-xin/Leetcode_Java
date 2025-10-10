@@ -49,7 +49,7 @@
 import java.util.Arrays;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution875 {
     public int minEatingSpeed(int[] piles, int h) {
         // left is 1, right is the max pile of piles
         int left = 1, right = 0;
